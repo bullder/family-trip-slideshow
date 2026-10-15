@@ -2,6 +2,10 @@
 
 [github.com/bullder/family-trip-slideshow](https://github.com/bullder/family-trip-slideshow)
 
+> **New to this, and on Windows?** Follow the step-by-step
+> **[Windows setup guide for beginners](docs/WINDOWS.md)**. It covers installing Claude
+> Desktop, Node.js and Git, then making your first video.
+
 A Claude Code skill that turns a folder of trip or family photos plus a song into a
 finished, beat-synced slideshow video. You get two cuts from one story:
 
@@ -50,7 +54,12 @@ and its titles, plus the photos that were skipped as near-duplicates.
 ## Requirements
 
 - **Windows, macOS or Linux**
-- **Node.js 18+**
+- **Claude Code**: the Claude Desktop app's **Code** tab, the `claude` terminal app, or
+  an IDE extension. Claude Code needs a paid Claude plan (Pro or higher).
+- **Node.js 18+**, the LTS version from [nodejs.org](https://nodejs.org)
+- **Git**: on Windows, [Git for Windows](https://git-scm.com/download/win) is required
+  by Claude Code itself and is used to install the skill. macOS includes git (it
+  installs the Command Line Tools on first use).
 - Internet access on the first run (npm packages, Remotion's headless browser
   ~170 MB, and the HyperFrames CLI via `npx`)
 - About 1.5 GB of free disk space per project
@@ -101,12 +110,15 @@ skill fits one of them much better than the other.
 same skills folder as the terminal and runs on your own computer, so it can read your
 photo folder, install packages and render video.
 
-1. Install the skill with Option 1 or Option 2 above. It lands in
+New to this on Windows? The [beginner guide](docs/WINDOWS.md) walks through installing
+Claude Desktop, Node.js and Git, step by step.
+
+1. Install [Claude Desktop](https://claude.ai/download), Node.js 18+ and Git (see
+   Requirements), then install the skill with Option 1 or Option 2 above. It lands in
    `~/.claude/skills/` (or `%USERPROFILE%\.claude\skills\` on Windows).
-2. Install **Node.js 18+**.
-3. Open Claude Desktop, switch to the **Code** tab, and start a session in any folder
+2. Open Claude Desktop, switch to the **Code** tab, and start a session in any folder
    (your home folder is fine).
-4. Ask for your video, e.g. *"Make a family slideshow from the photos in
+3. Ask for your video, e.g. *"Make a family slideshow from the photos in
    ~/Pictures/Crete 2027 with ~/Music/summer.mp3"*. Approve the commands it asks to
    run: npm install, rendering, and so on.
 
@@ -151,6 +163,7 @@ npx remotion studio
 family-trip-slideshow/
 ├── SKILL.md                  instructions Claude follows
 ├── README.md                 this file
+├── docs/WINDOWS.md           beginner setup guide for Windows
 ├── scripts/setup.mjs         creates a project (Node built-ins only)
 ├── references/
 │   ├── craft.md              story shape, title voice, crop and safe-zone rules
