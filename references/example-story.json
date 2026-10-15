@@ -1,0 +1,1094 @@
+{
+ "meta": {
+  "place": "Hurghada",
+  "year": "2026",
+  "people": [
+   {
+    "name": "Mike",
+    "who": "dad, navy tee, short dark hair"
+   },
+   {
+    "name": "Mary",
+    "who": "mom, red-and-white floral dress, auburn bob"
+   },
+   {
+    "name": "Irina",
+    "who": "older daughter, cream dress, red bow"
+   },
+   {
+    "name": "Eva",
+    "who": "younger daughter, black tee"
+   }
+  ]
+ },
+ "timing": {
+  "introEndBar": 3,
+  "outroStartBar": 45,
+  "totalSeconds": 120
+ },
+ "intro": {
+  "photo": "0473",
+  "focus": "50% 62%",
+  "kicker": "A family story",
+  "chain": [
+   {
+    "name": "Eva",
+    "x": 0.2
+   },
+   {
+    "name": "Irina",
+    "x": 0.43
+   },
+   {
+    "name": "Mary",
+    "x": 0.58
+   },
+   {
+    "name": "Mike",
+    "x": 0.83
+   }
+  ]
+ },
+ "outro": {
+  "photo": "0456",
+  "kicker": "Hurghada · Red Sea · 2026",
+  "title": "Until next summer"
+ },
+ "slides": [
+  {
+   "name": "The four of us",
+   "kind": "single",
+   "bars": [
+    3,
+    5
+   ],
+   "in": "fade",
+   "inT": 18,
+   "grade": "lush",
+   "leak": true,
+   "title": {
+    "kicker": "Chapter one · The garden",
+    "text": "The four of us",
+    "at": "top-left",
+    "size": 140,
+    "style": "stroke"
+   },
+   "shots": [
+    {
+     "photo": "0311",
+     "focus": "50% 35%",
+     "move": {
+      "zoom": [
+       1.12,
+       1.02
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0311",
+     "from": 10,
+     "to": 90,
+     "y": 40
+    },
+    "title": {
+     "at": "v-top",
+     "size": 120,
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Holding hands",
+   "kind": "panels",
+   "bars": [
+    5,
+    7
+   ],
+   "in": "slantR",
+   "inT": 16,
+   "grade": "lush",
+   "leak": true,
+   "shots": [
+    {
+     "photo": "0313",
+     "focus": "50% 32%"
+    },
+    {
+     "photo": "0276",
+     "focus": "50% 22%",
+     "move": {
+      "zoom": [
+       1.14,
+       1.04
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "seq",
+     "shots": [
+      {
+       "photo": "0313",
+       "focus": "50% 78%",
+       "zoom": [
+        1.06,
+        1
+       ]
+      },
+      {
+       "photo": "0276",
+       "focus": "50% 30%"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "name": "Mom & her girls",
+   "kind": "panels",
+   "bars": [
+    7,
+    9
+   ],
+   "in": "slantL",
+   "inT": 16,
+   "grade": "lush",
+   "leak": true,
+   "title": {
+    "text": "Mom & her girls",
+    "at": "top-left",
+    "size": 136
+   },
+   "shots": [
+    {
+     "photo": "0259",
+     "focus": "50% 25%"
+    },
+    {
+     "photo": "0268",
+     "focus": "50% 22%",
+     "move": {
+      "zoom": [
+       1.14,
+       1.04
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "seq",
+     "shots": [
+      {
+       "photo": "0259",
+       "focus": "45% 30%"
+      },
+      {
+       "photo": "0268",
+       "focus": "50% 30%"
+      }
+     ]
+    },
+    "title": {
+     "at": "v-top",
+     "size": 110,
+     "kickerSize": 30
+    },
+    "titleOnFirst": true
+   }
+  },
+  {
+   "name": "Mike & Mary",
+   "kind": "panels",
+   "bars": [
+    9,
+    11
+   ],
+   "in": "tiltL",
+   "inT": 18,
+   "grade": "lush",
+   "title": {
+    "kicker": "Mike & Mary",
+    "text": "Still the best team",
+    "at": "bottom-right",
+    "size": 128
+   },
+   "shots": [
+    {
+     "photo": "0279",
+     "focus": "50% 22%"
+    },
+    {
+     "photo": "0292",
+     "focus": "50% 24%",
+     "move": {
+      "zoom": [
+       1.14,
+       1.04
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "seq",
+     "shots": [
+      {
+       "photo": "0279",
+       "focus": "50% 30%"
+      },
+      {
+       "photo": "0292",
+       "focus": "50% 30%"
+      }
+     ]
+    },
+    "title": {
+     "at": "v-low",
+     "size": 116,
+     "text": "Still the\nbest team",
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Caught kissing",
+   "kind": "framed",
+   "bars": [
+    11,
+    13
+   ],
+   "in": "slantR",
+   "inT": 16,
+   "grade": "lush",
+   "field": "#24361c",
+   "side": "right",
+   "leak": true,
+   "title": {
+    "text": "Still in love",
+    "at": "left",
+    "size": 140
+   },
+   "shots": [
+    {
+     "photo": "0284",
+     "focus": "50% 20%"
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "full",
+     "photo": "0284",
+     "focus": "50% 40%"
+    },
+    "title": {
+     "at": "v-low",
+     "size": 140,
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Hands held",
+   "kind": "single",
+   "bars": [
+    13,
+    14
+   ],
+   "in": "slantL",
+   "inT": 16,
+   "grade": "lush",
+   "leak": true,
+   "shots": [
+    {
+     "photo": "0304",
+     "focus": "50% 24%",
+     "move": {
+      "zoom": [
+       1.1,
+       1.02
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "full",
+     "photo": "0304",
+     "focus": "50% 35%"
+    }
+   }
+  },
+  {
+   "name": "Arm in arm",
+   "kind": "single",
+   "bars": [
+    14,
+    15
+   ],
+   "in": "slantL",
+   "inT": 0,
+   "grade": "lush",
+   "shots": [
+    {
+     "photo": "0336",
+     "focus": "50% 60%",
+     "move": {
+      "zoom": [
+       1.02,
+       1.1
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "full",
+     "photo": "0336",
+     "focus": "50% 50%"
+    }
+   }
+  },
+  {
+   "name": "Lazy afternoons",
+   "kind": "single",
+   "bars": [
+    15,
+    17
+   ],
+   "in": "tiltR",
+   "inT": 20,
+   "grade": "lush",
+   "leak": true,
+   "title": {
+    "kicker": "Chapter two · The lawn",
+    "text": "Lazy afternoons",
+    "at": "top-right",
+    "size": 150,
+    "style": "stroke"
+   },
+   "shots": [
+    {
+     "photo": "0323",
+     "focus": "40% 55%",
+     "move": {
+      "zoom": [
+       1.04,
+       1.14
+      ],
+      "pan": [
+       [
+        1,
+        0
+       ],
+       [
+        -1,
+        0
+       ]
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0323",
+     "from": 12,
+     "to": 48,
+     "y": 55
+    },
+    "title": {
+     "at": "v-top",
+     "size": 130,
+     "text": "Lazy\nafternoons",
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Our own pyramid",
+   "kind": "framed",
+   "bars": [
+    17,
+    19
+   ],
+   "in": "slantR",
+   "inT": 16,
+   "grade": "lush",
+   "field": "#24361c",
+   "side": "left",
+   "leak": true,
+   "title": {
+    "kicker": "Egyptian engineering",
+    "text": "Our own pyramid",
+    "at": "right",
+    "size": 128
+   },
+   "shots": [
+    {
+     "photo": "0348",
+     "focus": "50% 45%"
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "full",
+     "photo": "0348",
+     "focus": "50% 55%"
+    },
+    "title": {
+     "at": "v-top",
+     "size": 130,
+     "text": "Our own\npyramid",
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "In the flowers",
+   "kind": "single",
+   "bars": [
+    19,
+    21
+   ],
+   "in": "slantL",
+   "inT": 16,
+   "grade": "lush",
+   "leak": true,
+   "shots": [
+    {
+     "photo": "0355",
+     "focus": "50% 45%",
+     "move": {
+      "zoom": [
+       1.14,
+       1.03
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0355",
+     "from": 30,
+     "to": 72,
+     "y": 45
+    }
+   }
+  },
+  {
+   "name": "Sisters",
+   "kind": "single",
+   "bars": [
+    21,
+    23
+   ],
+   "in": "push",
+   "inT": 14,
+   "grade": "lush",
+   "title": {
+    "kicker": "Irina & Eva",
+    "text": "Sisters",
+    "at": "top-right",
+    "size": 170
+   },
+   "shots": [
+    {
+     "photo": "0357",
+     "focus": "40% 60%",
+     "move": {
+      "zoom": [
+       1.03,
+       1.13
+      ],
+      "pan": [
+       [
+        -1,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0357",
+     "from": 38,
+     "to": 58,
+     "y": 60
+    },
+    "title": {
+     "at": "v-top",
+     "size": 150,
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Irina",
+   "kind": "single",
+   "bars": [
+    23,
+    25
+   ],
+   "in": "slantR",
+   "inT": 16,
+   "filter": "saturate(1.12) contrast(1.06)",
+   "leak": true,
+   "title": {
+    "kicker": "Irina",
+    "text": "Dreaming in red",
+    "at": "top-right",
+    "size": 132
+   },
+   "shots": [
+    {
+     "photo": "0372",
+     "focus": "60% 50%",
+     "move": {
+      "zoom": [
+       1.14,
+       1.04
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0372",
+     "from": 82,
+     "to": 86,
+     "y": 50
+    },
+    "title": {
+     "at": "v-top",
+     "size": 120,
+     "text": "Dreaming\nin red",
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Eva",
+   "kind": "single",
+   "bars": [
+    25,
+    27
+   ],
+   "in": "slantL",
+   "inT": 16,
+   "grade": "lush",
+   "leak": true,
+   "title": {
+    "kicker": "Eva",
+    "text": "Cool as ever",
+    "at": "top-left",
+    "size": 140
+   },
+   "shots": [
+    {
+     "photo": "0385",
+     "focus": "60% 50%",
+     "move": {
+      "zoom": [
+       1.03,
+       1.13
+      ],
+      "pan": [
+       [
+        1,
+        0
+       ],
+       [
+        -1,
+        0
+       ]
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0385",
+     "from": 72,
+     "to": 96,
+     "y": 50
+    },
+    "title": {
+     "at": "v-top",
+     "size": 116,
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Mary in bloom",
+   "kind": "single",
+   "bars": [
+    27,
+    29
+   ],
+   "in": "tiltL",
+   "inT": 18,
+   "grade": "lush",
+   "title": {
+    "kicker": "Mary",
+    "text": "In full bloom",
+    "at": "top-left",
+    "size": 140
+   },
+   "shots": [
+    {
+     "photo": "0393",
+     "focus": "60% 40%",
+     "move": {
+      "zoom": [
+       1.14,
+       1.04
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0393",
+     "from": 90,
+     "to": 86,
+     "y": 40
+    },
+    "title": {
+     "at": "v-low",
+     "size": 116,
+     "scrim": 1.6,
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Mary resting",
+   "kind": "single",
+   "bars": [
+    29,
+    30
+   ],
+   "in": "slantR",
+   "inT": 12,
+   "grade": "lush",
+   "leak": true,
+   "shots": [
+    {
+     "photo": "0401",
+     "focus": "60% 50%",
+     "move": {
+      "zoom": [
+       1.04,
+       1.1
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0401",
+     "from": 80,
+     "to": 98,
+     "y": 50
+    }
+   }
+  },
+  {
+   "name": "Blue o'clock",
+   "kind": "single",
+   "bars": [
+    30,
+    32
+   ],
+   "in": "tiltR",
+   "inT": 20,
+   "grade": "azure",
+   "leak": true,
+   "title": {
+    "kicker": "Chapter three · Poolside",
+    "text": "Blue o'clock",
+    "at": "top-left",
+    "size": 150,
+    "style": "stroke"
+   },
+   "shots": [
+    {
+     "photo": "0432",
+     "focus": "60% 40%",
+     "move": {
+      "zoom": [
+       1.13,
+       1.03
+      ],
+      "pan": [
+       [
+        -1,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0432",
+     "from": 82,
+     "to": 88,
+     "y": 40
+    },
+    "title": {
+     "at": "v-top",
+     "size": 130,
+     "scrim": 1.6,
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Hat & sky",
+   "kind": "single",
+   "bars": [
+    32,
+    34
+   ],
+   "in": "slantL",
+   "inT": 16,
+   "grade": "azure",
+   "leak": true,
+   "shots": [
+    {
+     "photo": "0421",
+     "focus": "55% 35%",
+     "move": {
+      "zoom": [
+       1.03,
+       1.14
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0421",
+     "from": 44,
+     "to": 52,
+     "y": 35
+    }
+   }
+  },
+  {
+   "name": "Ladies of the pier",
+   "kind": "panels",
+   "bars": [
+    34,
+    36
+   ],
+   "in": "slantR",
+   "inT": 16,
+   "grade": "azure",
+   "leak": true,
+   "title": {
+    "text": "Our ladies of the pier",
+    "at": "bottom-center",
+    "size": 124
+   },
+   "shots": [
+    {
+     "photo": "0408",
+     "focus": "50% 35%"
+    },
+    {
+     "photo": "0447",
+     "focus": "50% 35%",
+     "move": {
+      "zoom": [
+       1.14,
+       1.04
+      ]
+     }
+    },
+    {
+     "photo": "0445",
+     "focus": "50% 45%"
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "seq",
+     "shots": [
+      {
+       "photo": "0408",
+       "focus": "50% 40%"
+      },
+      {
+       "photo": "0447",
+       "focus": "50% 40%"
+      },
+      {
+       "photo": "0445",
+       "focus": "70% 55%",
+       "zoom": [
+        1.3,
+        1.22
+       ],
+       "shift": -24
+      }
+     ]
+    },
+    "title": {
+     "at": "v-low",
+     "size": 110,
+     "text": "Our ladies\nof the pier",
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Irina on the bridge",
+   "kind": "single",
+   "bars": [
+    36,
+    38
+   ],
+   "in": "push",
+   "inT": 14,
+   "grade": "azure",
+   "shots": [
+    {
+     "photo": "0438",
+     "focus": "70% 40%",
+     "move": {
+      "zoom": [
+       1.04,
+       1.14
+      ],
+      "pan": [
+       [
+        1,
+        0
+       ],
+       [
+        -1,
+        0
+       ]
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0438",
+     "from": 92,
+     "to": 86,
+     "y": 40
+    }
+   }
+  },
+  {
+   "name": "Red Sea evenings",
+   "kind": "single",
+   "bars": [
+    38,
+    40
+   ],
+   "in": "tiltL",
+   "inT": 20,
+   "leak": true,
+   "title": {
+    "kicker": "Chapter four · The sea",
+    "text": "Red Sea evenings",
+    "at": "top-left",
+    "size": 150,
+    "style": "stroke",
+    "scrim": 1.6
+   },
+   "shots": [
+    {
+     "photo": "0467",
+     "focus": "50% 45%",
+     "move": {
+      "zoom": [
+       1.13,
+       1.03
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "pan",
+     "photo": "0467",
+     "from": 15,
+     "to": 85,
+     "y": 45
+    },
+    "title": {
+     "at": "v-top",
+     "size": 130,
+     "text": "Red Sea\nevenings",
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Beach hug",
+   "kind": "single",
+   "bars": [
+    40,
+    41
+   ],
+   "in": "slantL",
+   "inT": 16,
+   "leak": true,
+   "shots": [
+    {
+     "photo": "0469",
+     "focus": "50% 28%",
+     "move": {
+      "zoom": [
+       1.1,
+       1.02
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "full",
+     "photo": "0469",
+     "focus": "50% 35%"
+    }
+   }
+  },
+  {
+   "name": "Mary at the sea",
+   "kind": "single",
+   "bars": [
+    41,
+    42
+   ],
+   "in": "slantL",
+   "inT": 0,
+   "filter": "saturate(0.78) sepia(0.12) brightness(0.97)",
+   "shots": [
+    {
+     "photo": "0477",
+     "focus": "50% 22%",
+     "move": {
+      "zoom": [
+       1.02,
+       1.1
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "full",
+     "photo": "0477",
+     "focus": "50% 30%"
+    }
+   }
+  },
+  {
+   "name": "Last light",
+   "kind": "framed",
+   "bars": [
+    42,
+    44
+   ],
+   "in": "fade",
+   "inT": 24,
+   "field": "#4a2008",
+   "side": "right",
+   "leak": true,
+   "title": {
+    "kicker": "Chapter five",
+    "text": "Golden hour",
+    "at": "left",
+    "size": 150,
+    "style": "stroke"
+   },
+   "shots": [
+    {
+     "photo": "0462",
+     "focus": "50% 40%"
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "full",
+     "photo": "0462",
+     "focus": "50% 50%"
+    },
+    "title": {
+     "at": "v-top",
+     "size": 130,
+     "kickerSize": 30
+    }
+   }
+  },
+  {
+   "name": "Still the four of us",
+   "kind": "single",
+   "bars": [
+    44,
+    45
+   ],
+   "in": "fade",
+   "inT": 20,
+   "title": {
+    "text": "Together, always",
+    "at": "bottom-center",
+    "size": 130
+   },
+   "shots": [
+    {
+     "photo": "0456",
+     "focus": "50% 50%",
+     "move": {
+      "zoom": [
+       1.1,
+       1.04
+      ]
+     }
+    }
+   ],
+   "vertical": {
+    "layout": {
+     "kind": "band",
+     "photo": "0456"
+    },
+    "title": {
+     "at": "v-band",
+     "size": 116,
+     "kickerSize": 30
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>%%PLACE%% %%YEAR%% — Finale (vertical)</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Kaushan Script";
+        src: url("assets/fonts/KaushanScript-Regular.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "Manrope";
+        src: url("assets/fonts/Manrope-VF.ttf") format("truetype");
+        font-weight: 200 800;
+      }
+      :root { --cream: #fff4e4; --night: #12141c; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: %%GROUND%%; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: %%GROUND%%; }
+      .layer { position: absolute; inset: 0; }
+      /* sunset sky continues above the photo; the black ground continues below it */
+      #field { background: %%BAND_GRADIENT%%; }
+      #band {
+        position: absolute; left: -97px; top: 330px; width: 1274px; height: 849px;
+        -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 9%);
+        mask-image: linear-gradient(180deg, transparent 0%, #000 9%);
+        transform-origin: 50% 100%;
+      }
+      #photo { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.9) sepia(0.08); }
+      #type { color: var(--cream); text-align: center; }
+      .kicker {
+        display: flex; align-items: center; justify-content: center; gap: 22px;
+        font-family: "Manrope"; font-weight: 600; font-size: 28px; letter-spacing: 0.34em;
+        text-transform: uppercase; text-indent: 0.34em;
+      }
+      .rule { display: block; width: 60px; height: 2px; background: #f2a24a; }
+      #kicker { position: absolute; left: 0; right: 0; top: 1206px; }
+      #title-mask { position: absolute; left: 0; right: 0; top: 1240px; display: flex; justify-content: center; overflow: hidden; padding: 0 0 26px; }
+      #title { display: block; font-family: "Kaushan Script"; font-size: 116px; line-height: 1.12; white-space: pre; text-align: center; padding: 6px 34px 0; }
+      #names { position: absolute; left: 0; right: 0; top: 1418px; font-weight: 500; font-size: 30px; letter-spacing: 0.4em; }
+      #names i { font-style: normal; opacity: 0.6; padding: 0 4px; }
+      #fade { background: #000; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="%%DUR%%" data-width="1080" data-height="1920">
+      <div id="field" class="layer clip" data-start="0" data-duration="%%DUR%%" data-track-index="0"></div>
+      <div class="layer clip" data-start="0" data-duration="%%DUR%%" data-track-index="1">
+        <div id="band"><img id="photo" src="assets/%%PHOTO%%" alt="" /></div>
+      </div>
+      <div id="type" class="layer clip" data-start="0" data-duration="%%DUR%%" data-track-index="2">
+        <div class="kicker" id="kicker"><span class="rule" id="rule-l"></span><span>%%KICKER%%</span><span class="rule" id="rule-r"></span></div>
+        <div id="title-mask"><span id="title">%%TITLE%%</span></div>
+        <div class="kicker" id="names">%%NAMES_HTML%%</div>
+      </div>
+      <div id="fade" class="layer clip" data-start="0" data-duration="%%DUR%%" data-track-index="3"></div>
+    </div>
+    <script>
+      document.fonts.ready.then(() => {
+        const tl = gsap.timeline({ paused: true });
+        // timings were authored for an 8.3 s intro / 7.5 s outro; T() stretches them to this track's bars
+        const S = %%SCALE%%;
+        const T = (t) => +(t * S).toFixed(3);
+        // The four stay whole; a slow push keeps them alive
+        tl.fromTo("#band", { scale: 1 }, { scale: 1.06, duration: %%DUR%%, ease: "none" }, T(0));
+        tl.fromTo("#title", { clipPath: "inset(0 100% 0 0)", y: 18, rotation: -3 },
+          { clipPath: "inset(0 0% 0 0)", y: 0, rotation: -2, duration: 1.3, ease: "power3.inOut" }, T(0.8));
+        tl.fromTo("#kicker", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.9, ease: "power2.out" }, T(1.4));
+        tl.fromTo(["#rule-l", "#rule-r"], { scaleX: 0 }, { scaleX: 1, duration: 0.9, ease: "expo.out" }, T(1.6));
+        tl.fromTo("#names", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.9, ease: "power2.out" }, T(2.6));
+        tl.fromTo("#fade", { opacity: 0 }, { opacity: 1, duration: 1.4, ease: "power1.in" }, %%FADE_AT%%);
+        window.__timelines["main"] = tl;
+      });
+    </script>
+  </body>
+</html>
