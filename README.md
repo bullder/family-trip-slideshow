@@ -87,9 +87,36 @@ Update with `git pull` in that folder.
 the folder to `family-trip-slideshow` inside `~/.claude/skills/` (or
 `%USERPROFILE%\.claude\skills\` on Windows).
 
-Then start a new Claude Code session. The skill triggers whenever you ask for a
+Then start a new Claude Code session (terminal, IDE, or the Claude Desktop **Code**
+tab; see below). The skill triggers whenever you ask for a
 slideshow, photo montage, travel video or Reel from your own photos. You can also run
 it directly with `/family-trip-slideshow`.
+
+### Claude Desktop
+
+The Claude Desktop app (macOS and Windows) has two places where skills run, and this
+skill fits one of them much better than the other.
+
+**Code tab, recommended.** The desktop app's **Code** tab is Claude Code. It reads the
+same skills folder as the terminal and runs on your own computer, so it can read your
+photo folder, install packages and render video.
+
+1. Install the skill with Option 1 or Option 2 above. It lands in
+   `~/.claude/skills/` (or `%USERPROFILE%\.claude\skills\` on Windows).
+2. Install **Node.js 18+**.
+3. Open Claude Desktop, switch to the **Code** tab, and start a session in any folder
+   (your home folder is fine).
+4. Ask for your video, e.g. *"Make a family slideshow from the photos in
+   ~/Pictures/Crete 2027 with ~/Music/summer.mp3"*. Approve the commands it asks to
+   run: npm install, rendering, and so on.
+
+**Chat with an uploaded skill: not recommended for this skill.** You can upload skills
+to regular chats under **Settings › Capabilities › Skills › Upload skill**: zip this
+folder, or use GitHub's *Download ZIP*, then turn on code execution. But chat skills
+run in a cloud sandbox, not on your computer. The sandbox can't see your photo folder,
+usually can't run `npm install` or download the headless browser, and isn't built for
+multi-minute video renders. Expect it to stop at the planning stage (choosing photos
+and writing `story.json`) at best. Use the Code tab for real renders.
 
 ## How it works
 
